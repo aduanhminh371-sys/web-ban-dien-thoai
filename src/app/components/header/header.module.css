@@ -1,0 +1,51 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 10px;
+    z-index: 100;
+  }
+  
+  .nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+  }
+  
+  .nav li {
+    font-size: 14px;
+    font-weight: 500;
+    color: #64748b;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .nav li:hover, .active {
+    color: #4f46e5 !important;
+  }
+  
+  .active {
+    font-weight: 700 !important;
+  }
+  
+  @media (max-width: 600px) {
+    .header { flex-direction: column; gap: 10px; }
+  }
+  .productCard {
+    background: white;
+    border-radius: 20px;
+    border: 1px solid #E2E8F0;
+    transition: 0.3s;
+    overflow: hidden;
+  }
+  
+  .productCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(108, 76, 241, 0.15);
+  }
